@@ -1,0 +1,10 @@
+evidence_id,identifier,origin,verification,doi_resolution,corrections,checked_at
+E-001,10.1109/TIM.2022.3197775,arXiv related DOI link,"arXiv title/authors/version matched; journal metadata UNVERIFIED","DOI and Crossref open returned internal error",UNVERIFIED,2026-10-09
+E-002,10.3390/machines13020130,PDF p1 citation,"PDF title/authors/year matched internally; independent registry NOT_RETRIEVED","DOI and Crossref open returned internal error",UNVERIFIED,2026-10-09
+E-003,stable publisher URL,publisher landing page,"title/author matched to PDF; landing page updated 2026-08-28; PDF version stamp UNVERIFIED",NOT_REPORTED,UNVERIFIED,2026-10-09
+E-004,NTRS20170006471,NASA landing page,"title/authors/conference paper/publication date matched PDF; presentation 20170011329 is a related-report candidate",NOT_REPORTED,UNVERIFIED,2026-10-09
+E-005,10.3390/s17102243,search result,UNVERIFIED,NOT_RETRIEVED,UNVERIFIED,2026-10-09
+E-006,10.3390/s24030981,search result,UNVERIFIED,NOT_RETRIEVED,UNVERIFIED,2026-10-09
+E-007,10.1016/j.asoc.2018.04.025,institutional repository,"title/authors/year matched institutional metadata; publisher content NOT_RETRIEVED",NOT_RETRIEVED,UNVERIFIED,2026-10-09
+E-008,NOT_RETRIEVED,search result,UNVERIFIED,NOT_RETRIEVED,"erratum lead UNVERIFIED",2026-10-09
+

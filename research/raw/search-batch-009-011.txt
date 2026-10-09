@@ -1,0 +1,647 @@
+Precision landing using an adaptive fuzzy multi-sensor data fusion architecture - ScienceDirect (https://www.sciencedirect.com/science/article/pii/S1568494618302163)
+citeturn9search0 [wordlim: 200] Published: 8.2 years ago; Crawled: 2 months ago; # Precision landing using an adaptive fuzzy multi-sensor data fusion architecture ... In this paper, the problem of precision terminal landing phase has been tackled using intelligent adaptive low cost multi-sensor data fusion architecture.
+
+## Applied Soft Computing
+
+Volume 69, August 2018, Pages 149-164
+
+# Precision landing using an adaptive fuzzy multi-sensor data fusion architecture
+
+https://doi.org/10.1016/j.asoc.2018.04.025Get rights and content
+
+## Highlights
+
+  * •
+
+An adaptive fuzzy sensor fusion technique between the OF, altimeter, and GPS/INS for precision landing was presented.
+
+  * •
+
+The proposed algorithm has demonstrated an enhanced state estimation compared to conventional Kalman filter.
+
+  * •
+
+A precision landing with less than 10 cm maximum position error has been achieved using the proposed integrated solution.
+
+## Abstract
+
+The positional inaccuracies associated with the GPS/INS measurements make the terminal phase of the normal GPS/INS landing system imprecise. To solve this problem, an adaptive fuzzy data fusion algorithm is developed to obtain more accurate state estimates while the vehicle approaches the landing surface. This algorithm takes the translational displacements in x and y from the mounted Optical Flow (OF) sensor and fuses them with the INS attitude measurements and the altimeter measurements. This low cost adaptive algorithm can be used for vertical landings in areas where GPS outages might happen or in GPS denied areas. The adaptation is governed by imposing appropriate assumptions under which the filter measurement noise matrix R is predicted. The R matrix is continuously adjusted through a fuzzy inference system (FIS) based on the Kalman innovative sequence and the applied covariance-matching technique. This adaptive fuzzy Kalman fusion algorithm (AFKF) is used to estimate the vehicle’s states while landing is being commanded. AFKF results are compared with these obtained using a classical Kalman estimation technique. The AFKF algorithm shows better states estimates than its conventional counterpart does. Compared to prior landing systems, the proposed low cost AFKF has achieved a precision landing with less than 10 cm maximum estimated position error. Real precision landing flights were conducted to demonstrate the validity of the proposed intelligent estimation method.
+
+## Graphical abstract
+
+The paper presents an adaptive sensor fusion algorithm for state estimation of a UAV as it approaches a landing surface. The presented algorithm fuses the GPS/INS attitude and altimeter measurements with the measurements obtained from the experimentally obtained OF sensor, as seen in the figure below. The improvement of the state estimation based on the proposed algorithm is demonstrated by comparing the results with those obtained using a conventional Kalman filter. The Figure below depicts the fusion scheme.
+
+Image
+
+  1. Download: Download high-res image (82KB)
+  2. Download: Download full-size image
+
+## Introduction
+
+A successful utilization of unmanned aerial Vertical Takeoff and Landing (VTOL) vehicles in missions that require a high degree of autonomy necessitates accurate and fast updated measurements from the onboard navigational sensors [1], [2]. For example, the quality of the Global Positioning System (GPS) becomes low when the Unmanned Aerial Vehicle (UAV) is approaching the ground, and a landing with few meters’ error might result. Therefore, the use of other more precise sensors is needed for the development of the sensor fusion design [3], [4], [5], [6].
+
+Vision sensors have been employed in designing autonomous landing systems in recent years due to their precision and high update rate measurements [7], [8]. A vision-based helicopter-landing algorithm was proposed in [9]. The study achieved a precise landing with an average position error equal to 47 cm. However, their solution is computationally heavy and ill-suited for vehicles that have smaller payloads. In [10], a pattern of InfraRed (IR) LEDs organized in a T-shape and a Wii camera was utilized to perform an indoor auto takeoff, hovering and landing. The algorithm performs well at 60 cm height; however, at higher altitudes, the positional error will be large and inaccurate TOL might occur. In [11], a vision off-the-shelf hardware was used to provide real time estimates of the UAV orientation and the position relative to the landing position. Similarly, [12] studies the 6 Degree of Freedom (DOF) pose estimation of a Miniature Air Vehicle (MAV) using on-board monocular vision solutions.
+
+OF sensors are considered robust low cost navigational sensors for UAVs applications [13]. OF sensors are used to avoid collision, measure the altitude and for position stabilization during the landing stage. Furthermore, OF sensors are used for height estimation and terrain navigation [14]. In [15], the OF measurements were used to control the vertical landing on a non-stationary platform. Whereas, In [16], an OF sensor was utilized for the position estimation of a quadrotor, and an auto-landing with 30 cm position error was performed. In [17], PX4FLOW optical sensor was used to perform hovering in an outdoor flight trajectory for Cheetah quadrotor. The optical flow components measured by the PX4FLOW sensor are compensated for the 3D rotations and transformed to the metric scale.
+
+Precise state estimation is needed for the UAV to perform successful autonomous flight. However, obtaining accurate states estimate is challenging due to the sensor drifts, noise on the onboard Commercial off-the-shelf (COTS) sensors and measurement bias [18]. Low cost COTS sensors with such expected errors are usually utilized in UAVs because of their lightweight, low power consumption and compact size. By fusing the measurements of different precise sensors, the chance of obtaining accurate estimates would be definitely higher. For example, in [19], the readings of the kinematic OF model are fused with the measurements of the GPS/INS to estimate the 3D velocity states and position of an object. In [20], [21], [18], a high-accuracy helicopter’s attitude and flapping states estimation was addressed using the Kalman filter. The unmeasured flapping angles of the Maxi Joker 3 helicopter were estimated with maximum error not exceeding 0.3°.
+The fuzzy-adapted Kalman filter shows better performance in rejecting the measurement noise and estimating the navigational states accurately [29], [30], [31].
+
+In this paper, the problem of precision terminal landing phase has been tackled using intelligent adaptive low cost multi-sensor data fusion architecture. This architecture proposes a novel multi-sensor data fusion between the experimentally obtained OF sensors’ model, altimeter and INS solution for vertical precision landing applications. Compared to prior landing systems, the proposed integrated solution has succeeded in performing an autonomous precision landing in GPS denied environments with less than 5 cm estimated altitude error. Moreover, the proposed intelligent estimation technique has shown high degree of robustness in the presence of external disturbances compared to the normal estimation techniques.
+
+The following sections of the paper are organized as follows. Section 2 describes the quadrotor model used in this study and the optical flow modeling design. Section 3 represents the design of the proposed sensor fusion algorithm architecture. Simulation results are presented in Section 4 while Section 5 demonstrates the experimental validation. Finally, Section 6 concludes the paper.
+
+--------------------------------------------------------------------------------
+Precision landing using an adaptive fuzzy multi-sensor data fusion architecture - Kingston University London (https://researchinnovation.kingston.ac.uk/en/publications/precision-landing-using-an-adaptive-fuzzy-multi-sensor-data-fusio-2/)
+citeturn9search1 [wordlim: 200] Published: 8.1 years ago; Crawled: 3 months ago; # Precision landing using an adaptive fuzzy multi-sensor data fusion architecture
+
+# Precision landing using an adaptive fuzzy multi-sensor data fusion architecture
+
+  * Mohammad K. Al-Sharman
+  * , Bara J. Emran
+  * , Mohammad A. Jaradat
+  * , Homayoun Najjaran
+  * , Raghad Al-Husari
+  * , Yahya Zweiri
+
+Research output: Contribution to journal › Article › peer-review
+
+9 Downloads (Pure)
+
+Original language  | English
+Pages (from-to)  | 149-164
+Journal  | Applied Soft Computing
+Volume  | 69
+Early online date  | 27 Apr 2018
+DOIs  | 
+
+  * https://doi.org/10.1016/j.asoc.2018.04.025
+Publication status  | Published - 31 Aug 2018
+
+## Keywords
+
+  * Computer science and informatics
+
+## Access to Document
+
+  * 10.1016/j.asoc.2018.04.025
+
+  * Zweiri-Y-40951-AAMAccepted author manuscript, 3.79 MB Licence: CC BY-NC-ND
+
+## Cite this
+
+  * APA
+  * Author
+  * BIBTEX
+  * Harvard
+  * Standard
+  * RIS
+  * Vancouver
+
+Al-Sharman, M. K., Emran, B. J., Jaradat, M. A., Najjaran, H., Al-Husari, R., & Zweiri, Y. (2018). Precision landing using an adaptive fuzzy multi-sensor data fusion architecture. Applied Soft Computing, 69, 149-164. https://doi.org/10.1016/j.asoc.2018.04.025
+
+@article{91fa9c1a913042ffb1de585b26efb5e8,
+
+title = "Precision landing using an adaptive fuzzy multi-sensor data fusion architecture",
+
+keywords = "Computer science and informatics",
+
+author = "Al-Sharman, \{Mohammad K.\} and Emran, \{Bara J.\} and Jaradat, \{Mohammad A.\} and Homayoun Najjaran and Raghad Al-Husari and Yahya Zweiri",
+
+year = "2018",
+
+month = aug,
+
+day = "31",
+
+doi = "10.1016/j.asoc.2018.04.025",
+
+language = "English",
+
+volume = "69",
+
+pages = "149--164",
+
+journal = "Applied Soft Computing",
+
+issn = "1568-4946",
+
+publisher = "Elsevier B.V.",
+
+}
+
+Al-Sharman, MK, Emran, BJ, Jaradat, MA, Najjaran, H, Al-Husari, R & Zweiri, Y 2018, 'Precision landing using an adaptive fuzzy multi-sensor data fusion architecture', Applied Soft Computing, vol. 69, pp. 149-164. https://doi.org/10.1016/j.asoc.2018.04.025
+
+Research output: Contribution to journal › Article › peer-review
+
+TY - JOUR
+
+T1 - Precision landing using an adaptive fuzzy multi-sensor data fusion architecture
+
+AU - Al-Sharman, Mohammad K.
+
+AU - Emran, Bara J.
+
+AU - Jaradat, Mohammad A.
+
+AU - Najjaran, Homayoun
+
+AU - Al-Husari, Raghad
+
+AU - Zweiri, Yahya
+
+PY - 2018/8/31
+
+Y1 - 2018/8/31
+
+KW - Computer science and informatics
+
+U2 - 10.1016/j.asoc.2018.04.025
+
+DO - 10.1016/j.asoc.2018.04.025
+
+M3 - Article
+
+SN - 1568-4946
+
+VL - 69
+
+SP - 149
+
+EP - 164
+
+JO - Applied Soft Computing
+
+JF - Applied Soft Computing
+
+ER -
+
+Al-Sharman MK, Emran BJ, Jaradat MA, Najjaran H, Al-Husari R, Zweiri Y. Precision landing using an adaptive fuzzy multi-sensor data fusion architecture. Applied Soft Computing. 2018 Aug 31;69:149-164. Epub 2018 Apr 27. doi: 10.1016/j.asoc.2018.04.025--------------------------------------------------------------------------------
+A Novel Online Data-Driven Algorithm for Detecting UAV Navigation Sensor Faults (https://www.mdpi.com/227430)
+citeturn9search2 [wordlim: 200] Published: 9.0 years ago; Crawled: 4 months ago; # A Novel Online Data-Driven Algorithm for Detecting UAV Navigation Sensor Faults ... The fault detection algorithm presented in this paper is designed to detect these three types of navigation sensor faults as they manifest in the position domain through excessive position error. ... For the classic model-based fault detection and diagnosis, the research could be classified into two distinct and parallel communities [5], i.e., the Fault Detection and Isolation (FDI) community and Diagnosis (DX) community. ... Development of a novel data-driven KF residual analysis with ANFIS-based fault detection algorithm for fast online detection and low misdetection rate.
+
+# A Novel Online Data-Driven Algorithm for Detecting UAV Navigation Sensor Faults
+
+by
+
+Rui Sun
+
+ImageRui Sun
+
+SciProfiles Scilit Preprints.org Google Scholar
+
+^{ 1,*}^{},
+
+Qi Cheng
+
+ImageQi Cheng
+
+SciProfiles Scilit Preprints.org Google Scholar
+
+^{ 1},
+
+Guanyu Wang
+
+ImageGuanyu Wang
+
+SciProfiles Scilit Preprints.org Google Scholar
+
+^{ 1} and
+
+Washington Yotto Ochieng
+
+ImageWashington Yotto Ochieng
+
+SciProfiles Scilit Preprints.org Google Scholar
+
+^{ 1,2}
+
+^{1}
+
+College of Civil Aviation, Nanjing University of Aeronautics and Astronautics, Nanjing 211106, China
+
+^{2}
+
+Centre for Transport Studies, Imperial College London, London SW7 2AZ, UK
+
+^{*}
+
+Author to whom correspondence should be addressed.
+
+Sensors 2017, 17(10), 2243; https://doi.org/10.3390/s17102243
+
+Submission received: 23 July 2017 / Revised: 13 September 2017 / Accepted: 26 September 2017 / Published: 29 September 2017
+
+(This article belongs to the Section Remote Sensors)
+
+Download keyboard_arrow_down
+
+Download PDF
+Download PDF with Cover
+Download XML
+Download Epub
+
+## Abstract
+
+The use of Unmanned Aerial Vehicles (UAVs) has increased significantly in recent years. On-board integrated navigation sensors are a key component of UAVs’ flight control systems and are essential for flight safety. In order to ensure flight safety, timely and effective navigation sensor fault detection capability is required. In this paper, a novel data-driven Adaptive Neuron Fuzzy Inference System (ANFIS)-based approach is presented for the detection of on-board navigation sensor faults in UAVs. Contrary to the classic UAV sensor fault detection algorithms, based on predefined or modelled faults, the proposed algorithm combines an online data training mechanism with the ANFIS-based decision system. The main advantages of this algorithm are that it allows real-time model-free residual analysis from Kalman Filter (KF) estimates and the ANFIS to build a reliable fault detection system. In addition, it allows fast and accurate detection of faults, which makes it suitable for real-time applications. Experimental results have demonstrated the effectiveness of the proposed fault detection method in terms of accuracy and misdetection rate.
+
+Keywords:
+
+online; data-driven; navigation sensor fault detection; adaptive neuron fuzzy inference system
+
+## 1. Introduction
+
+Unmanned Aerial Vehicle (UAV) applications have been increasing in recent years, including surveillance, reconnaissance, search/destroy missions, aerial photography, and disaster monitoring [1]. Nevertheless, with the rapid development of these applications, some of which are safety critical, UAV flight safety has become a critical issue. UAV navigation sensors are a key component of its flight control system, necessitating that mechanisms are in place to ensure that faults are detected in a manner that ensures safety. However, because UAVs operate in changing and complex environments, it can be difficult to predict all possible faults. In addition, the highly dynamic operational environment requires faults to be detected in real-time. Therefore, due to the high importance of detecting navigation sensor faults there is a need to design a reliable algorithm that can extract the failures from the real-time UAV states fast, accurately, and with low misdetection and low false alarm rates.
+
+Accordingly, this paper presents a novel data-driven Kalman Filter (KF)—Adaptive Neuro Fuzzy Inference System (ANFIS)-based algorithm for the detection of UAV navigation sensor faults. This method integrates the online data-driven detection cycle with the KF residuals and an ANFIS-based fault detector. The advantages over the state-of-the-art are: (1) Model free—without the need to consider the nature of the faults or models for the complex UAV navigation system, as required for the model-based approach in [10]; (2) Adaptive rules extraction—by employing a frequently updated training database online, unlike the traditional rule-based approach [11]. The latest features of all types of faults (point, contextual, and collective) present in the database are used for the extraction of fault judgement rules; (3) Robust fault detection decision making and more detailed analysis of the algorithm—the proposed KF residual with the ANFIS-based decision-making method is more robust compared to the simple Mahalanobis distance-based detector in [4,12,13], and faster than the Particle Filter (PF)- and Fuzzy Inference System (FIS)-based algorithm in [11]. In addition, field test results are presented and the relationship between the size of the sliding window and the fault detection performance is investigated in the paper.
+
+The contributions of the paper are as follows:
+
+(1)
+    
+
+Development of a novel data-driven KF residual analysis with ANFIS-based fault detection algorithm for fast online detection and low misdetection rate.
+
+(2)
+    
+
+The algorithm’s training database is updated online to ensure that it always contains the latest features of point, contextual, and collective faults.
+
+(3)
+    
+
+Novel adaptive online training strategies are employed for the extraction of ANFIS rules to ensure timely and accurate fault detection.
+
+The rest of the paper is organized as follows. The online data-driven ANFIS-based algorithm for the detection of UAV navigation sensor faults is presented in Section 2. Simulation and field experiments to evaluate the proposed algorithm are presented in Section 3 and Section 4, respectively. Finally, the paper is concluded in Section 5 by a summary of the main findings.
+
+--------------------------------------------------------------------------------
+Fault tolerant multi-sensor data fusion for autonomous navigation in future civil aviation operations - ScienceDirect (https://www.sciencedirect.com/science/article/pii/S0967066122000454)
+citeturn9search3 [wordlim: 200] Published: 4.4 years ago; Crawled: last month; This paper has presented a general architecture for fault-tolerant multi-sensor data fusion for aircraft navigation during approach and landing. ... ### Precision landing using an adaptive fuzzy multi-sensor data fusion architecture ... ### Aerospace Science and Technology
+
+### Precision landing using an adaptive fuzzy multi-sensor data fusion architecture
+
+### Applied Soft Computing
+
+(2018)
+
+  * Combastel C.
+
+### Zonotopes and Kalman observers: Gain optimality under distinct uncertainty paradigms and robust convergence
+
+### Automatica
+
+(2015)
+
+  * Combastel C.
+
+### An extended zonotopic and Gaussian Kalman filter (EZGKF) merging set-membership and stochastic paradigms: Toward non-linear filtering and fault detection
+
+### Annual Reviews in Control
+
+(2016)
+
+  * Gibert V. et al.
+
+### Visual estimation of deviations for the civil aircraft landing
+
+### Control Engineering Practice
+
+(2018)
+
+  * Levant A.
+
+### Robust exact differentiation via sliding mode technique
+
+### Automatica
+
+(1998)
+
+  * NøRgaard M. et al.
+
+### New developments in state estimation for nonlinear systems
+
+### Automatica
+
+(2000)
+
+  * Varga A. et al.
+
+### Lpv-model based identification approach of oscillatory failure cases
+
+### IFAC Proceedings Volumes
+--------------------------------------------------------------------------------
+Precision landing using an adaptive fuzzy multi-sensor data fusion architecture (https://eurekamag.com/research/086/763/086763067.php)
+citeturn9search4 [wordlim: 200] Crawled: 2 months ago; # Precision landing using an adaptive fuzzy multi-sensor data fusion architecture ... 2014: Adaptive neuro-fuzzy fusion of sensor data Infrared Physics-Technology 67: 222-228
+
+# Precision landing using an adaptive fuzzy multi-sensor data fusion architecture
+
+##### Al-Sharman, M.K.; Emran, B.J.; Jaradat, M.A.; Najjaran, H.; Al-Husari, R.; Zweiri, Y.
+
+* * *
+
+#### Applied Soft Computing 69: 149-164
+
+#### 2018
+
+* * *
+
+ISSN/ISBN: 1568-4946
+
+DOI: 10.1016/j.asoc.2018.04.025
+Accession: 086763067
+
+
+#### References
+
+Qiao, W; Rong, J; Zhong, X 2009: An adaptive neural-fuzzy-based multi-sensor data fusion architecture for target tracking systems International Journal of Remote Sensing 30(18): 4897-4904
+
+* * *
+
+Tang, H.; Zhang, D.; Gan, Z. 2020: Control System for Vertical Take-Off and Landing Vehicle's Adaptive Landing Based on Multi-Sensor Data Fusion Sensors 20(16)
+
+* * *
+
+Gu, M. 2025: Improved Kalman Filtering and Adaptive Weighted Fusion Algorithms for Enhanced Multi-Sensor Data Fusion in Precision Measurement Informatica (Slovenia) 49(10): 85-100
+
+* * *
+
+Srdjovic, J.; Anicic, O.; Jovanovic, M. 2017: Adaptive neuro-fuzzy fusion of multi-sensor data for monitoring of CNC machining Sensor Review 37(1): 78-81
+--------------------------------------------------------------------------------
+dblp: Precision landing using an adaptive fuzzy multi-sensor data fusion architecture. (https://dblp.uni-trier.de/rec/journals/asc/Al-SharmanEJNAZ18.html)
+citeturn9search5 [wordlim: 200] Crawled: 4 months ago; Precision landing using an adaptive fuzzy multi-sensor data fusion architecture.
+
+# "Precision landing using an adaptive fuzzy multi-sensor data fusion ..."
+
+  * help us
+
+    * How can I correct errors in dblp?
+    * contact dblp
+
+Mohammad K. Al-Sharman et al. (2018)
+
+  *   * Image: use mirror server
+
+Trier
+
+  * Dagstuhl
+
+  * > Home
+
+## Details and statistics
+
+  * show external API response
+
+    * JSON @ openalex.org
+
+see also:
+
+    * API doc @ openalex.org
+
+DOI: 10.1016/J.ASOC.2018.04.025
+
+access: closed
+
+type: Journal Article
+
+metadata version: 2025-01-19
+
+  * Image: Journal Articles
+
+    * view
+
+      * electronic edition via DOI
+      * unpaywalled version
+
+
+      * https://dblp.org/rec/journals/asc/Al-SharmanEJNAZ18
+
+Mohammad K. Al-Sharman, Bara J. Emran, Mohammad A. Jaradat, Homayoun NajjaranImage: 0000-0002-3550-225X, Raghad Al-Husari, cite18†Yahya H. Zweiri Image: 0000-0003-4331-7254:
+Precision landing using an adaptive fuzzy multi-sensor data fusion architecture. Appl. Soft Comput. 69: 149-164 (2018)
+
+Image
+
+manage site settings
+
+To protect your privacy, all features that rely on external API calls from your browser are turned off by default. You need to opt-in for them to become active. All settings here will be stored as cookies with your web browser. For more information see our F.A.Q.
+
+
+Privacy notice: By enabling the option above, your browser will contact the API of openalex.org to load additional information. Although we do not have any reason to believe that your call will be tracked, we do not have any control over how the remote server uses your data. So please proceed with care and consider checking the information given by OpenAlex.
+
+last updated on 2025-01-19 14:38 CET by the dblp team
+
+ all metadata released as open data under CC0 1.0 license--------------------------------------------------------------------------------
+Precision landing using an adaptive fuzzy multi-sensor data fusion architecture - Fingerprint - Khalifa University (https://khazna.ku.ac.ae/en/publications/precision-landing-using-an-adaptive-fuzzy-multi-sensor-data-fusio/fingerprints/)
+citeturn9search6 [wordlim: 200] Crawled: last week; Dive into the research topics of 'Precision landing using an adaptive fuzzy multi-sensor data fusion architecture'.
+
+# Precision landing using an adaptive fuzzy multi-sensor data fusion architecture
+
+  * Mohammad K. Al-Sharman
+  * , Bara J. Emran
+  * , Mohammad A. Jaradat
+  * , Homayoun Najjaran
+  * , Raghad Al-Husari
+  * , Yahya Zweiri
+
+  * Aerospace Engineering
+
+  * University of British Columbia Okanagan
+  * American University of Sharjah
+  * Jordan Univ. of Sci./Technology
+
+Research output: Contribution to journal › Article › peer-review
+
+46 Scopus citations
+
+## Fingerprint
+
+Dive into the research topics of 'Precision landing using an adaptive fuzzy multi-sensor data fusion architecture'. Together they form a unique fingerprint.
+
+### Earth and Planetary Sciences
+
+### Physics
+
+Powered by Pure Link opens in a new tab, Scopus Link opens in a new tab & Elsevier Fingerprint Engine™ Link opens in a new tab--------------------------------------------------------------------------------
+IAE-adaptive Kalman filter for INS/GPS integrated navigation system - ScienceDirect (https://www.sciencedirect.com/science/article/pii/S1004413206600868)
+citeturn9search7 [wordlim: 200] Published: 20.1 years ago; Crawled: last month;   * ### Precision landing using an adaptive fuzzy multi-sensor data fusion architecture ... Her main research interests include integrated navigation system with information fusion technology and intelligent transportation system with navigation.
+
+(2000)
+
+  * D Loebis et al.
+
+### Adaptive tuning of a Kalman filter via fuzzy logic for an intelligent AUV navigation system
+
+### Control engineering practice
+
+(2003)
+
+## Cited by (40)
+
+  * ### Precision landing using an adaptive fuzzy multi-sensor data fusion architecture
+
+2018, Applied Soft Computing Journal
+
+Show abstract
+
+The positional inaccuracies associated with the GPS/INS measurements make the terminal phase of the normal GPS/INS landing system imprecise. To solve this problem, an adaptive fuzzy data fusion algorithm is developed to obtain more accurate state estimates while the vehicle approaches the landing surface. This algorithm takes the translational displacements in x and y from the mounted Optical Flow (OF) sensor and fuses them with the INS attitude measurements and the altimeter measurements. This low cost adaptive algorithm can be used for vertical landings in areas where GPS outages might happen or in GPS denied areas. The adaptation is governed by imposing appropriate assumptions under which the filter measurement noise matrix R is predicted. --------------------------------------------------------------------------------
+dblp: Mohammad K. Al-Sharman (https://dblp.org/pid/225/2742.html)
+citeturn9search8 [wordlim: 200] Published: 8 months ago; Crawled: last month; Precision landing using an adaptive fuzzy multi-sensor data fusion architecture.
+      * Reddit
+      * BibSonomy
+      * LinkedIn
+
+persistent URL:
+
+      * https://dblp.org/rec/journals/asc/Al-SharmanEJNAZ18
+
+Mohammad K. Al-Sharman, Bara J. Emran, Mohammad A. Jaradat, Homayoun NajjaranImage: 0000-0002-3550-225X, Raghad Al-Husari, Yahya H. ZweiriImage: 0000-0003-4331-7254:
+Precision landing using an adaptive fuzzy multi-sensor data fusion architecture. Appl. Soft Comput. 69: 149-164 (2018)
+  * Image: Journal Articles
+
+[j1]
+
+    * view
+
+      * electronic edition via DOI
+      * unpaywalled version
+      * details & citations
+
+authority control:
+
+      *  
+
+    * export record
+
+      * BibTeX
+      * RIS
+      * RDF N-Triples
+      * RDF Turtle
+      * RDF/XML
+      * XML
+      * plain text
+
+dblp key:
+
+      * journals/jfi/Al-SharmanJA18
+
+    * ask others
+
+      * Google
+      * Google Scholar
+      * Semantic Scholar
+      * Internet Archive Scholar
+      * CiteSeerX
+      * PubPeer
+
+    * share record
+
+      * Bluesky
+      * Reddit
+      * BibSonomy
+      * LinkedIn
+
+persistent URL:
+
+      * https://dblp.org/rec/journals/jfi/Al-SharmanJA18
+
+Mohammad K. Al-Sharman, Mohammad A. Jaradat, Mamoun F. Abdel-HafezImage: 0000-0002-9010-4094:
+Intelligent attitude and flapping angles estimation of flybarless helicopters under near-hover conditions. J. Frankl. Inst. 355(14): 6830-6858 (2018)
+
+--------------------------------------------------------------------------------
+dblp: Bara J. Emran (https://dblp.org/pid/194/9283)
+citeturn9search9 [wordlim: 200] Published: 8 months ago; Crawled: 5 months ago; Precision landing using an adaptive fuzzy multi-sensor data fusion architecture.
+    * share record
+
+      * Bluesky
+      * Reddit
+      * BibSonomy
+      * LinkedIn
+
+persistent URL:
+
+      * https://dblp.org/rec/journals/asc/Al-SharmanEJNAZ18
+
+Mohammad K. Al-Sharman, Bara J. Emran, Mohammad A. Jaradat, Homayoun NajjaranImage: 0000-0002-3550-225X, Raghad Al-Husari, Yahya H. ZweiriImage: 0000-0003-4331-7254:
+Precision landing using an adaptive fuzzy multi-sensor data fusion architecture. Appl. Soft Comput. 69: 149-164 (2018)
+  * 2017
+  * Image: Journal Articles
+
+[j1]
+
+    * view
+
+      * electronic edition via DOI (open access)
+      * details & citations
+
+authority control:
+
+      *  
+
+    * export record
+
+      * BibTeX
+      * RIS
+      * RDF N-Triples
+      * RDF Turtle
+      * RDF/XML
+      * XML
+      * plain text
+
+dblp key:
+
+      * journals/remotesensing/EmranTN17
+
+    * ask others
+
+      * Google
+      * Google Scholar
+      * Semantic Scholar
+      * Internet Archive Scholar
+      * CiteSeerX
+      * PubPeer
+
+    * share record
+
+      * Bluesky
+      * Reddit
+      * BibSonomy
+      * LinkedIn
+
+persistent URL:
+
+--------------------------------------------------------------------------------
+dblp: Mohammad K. Al-Sharman (https://dblp.org/pid/225/2742)
+citeturn9search10 [wordlim: 200] Published: 8 months ago; Crawled: 5 months ago; Precision landing using an adaptive fuzzy multi-sensor data fusion architecture.
+--------------------------------------------------------------------------------
+Bara J. Emran (https://www.csauthors.net/bara-j-emran/)
+citeturn9search11 [wordlim: 200] Crawled: 6 days ago; Precision landing using an adaptive fuzzy multi-sensor data fusion architecture.
+--------------------------------------------------------------------------------
+IEEE ComSoc (https://upcommons.upc.edu/bitstreams/3f1bca50-ad66-4507-a8be-1348cf5f7c0a/download)
+citeturn9search12 [wordlim: 200] Published: 6 months ago; Jin et al., “An advanced phase synchronization scheme for LT-1,” ... Zweiri, “Precision landing using an adaptive    fuzzy multi-sensor data fusion architecture,” Appl.
+--------------------------------------------------------------------------------
+• Conference Proceeding: Alhajri, M.I.; Ali, N.T.; Shubair, R.M. "A machine learning approach for the classification of indoor environments using RF signatures," 2018 IEEE Global Conference on Signal and Information Processing, GlobalSIP 2018 - Proceedings, p.1060-1062, Jul 2018. (https://www.aus.edu/sites/default/files/cen_publications_2018_2023_ver2-1.pdf)
+citeturn9search13 [wordlim: 200] Published: 2.6 years ago; "Reliability Analysis of Logistics Network under Period Based Resource Allocations," 2018 IEEE International Conference on Technology Management, Operations and Decisions, ICTMOD 2018, p.257-261, Jul 2018. ... "Precision landing using an adaptive fuzzy multi-sensor data fusion architecture," Applied Soft Computing Journal, Vol. 69, p.149-164, Aug 2018.
+--------------------------------------------------------------------------------
+Received 31 October 2023; revised 3 December 2023; accepted 7 December 2023. Date of publication 13 December 2023; (https://upcommons.upc.edu/bitstream/2117/400262/1/Accurate_Phase_Synchronization_for_Precoding-Enabled_GEO_Multibeam_Satellite_Systems.pdf)
+citeturn9search14 [wordlim: 200] Published: 1.3 years ago; Jin et al., “An advanced phase synchronization scheme for LT-1,” ... Zweiri, “Precision landing using an adaptivefuzzy multi-sensor data fusion architecture,” Appl.
+--------------------------------------------------------------------------------
+Inteligencia Artiﬁcial, 22(63) (2019), 1-15 (https://documentacion.fundacionmapfre.org/documentacion/publico/es/media/group/1108463.do)
+citeturn9search15 [wordlim: 200] Published: 6 months ago; Zweiri, “Precisionlanding using an adaptive fuzzy multi-sensor data fusion architecture”, Appl.
+--------------------------------------------------------------------------------
+International Journal on Smart & Sustainable Intelligent Computing (https://submissions.adroidjournals.com/index.php/ijssic/article/download/31/30/71)
+citeturn9search16 [wordlim: 200] Published: 9 months ago; tioning and embedded multi-sensors fusion cooperation in advanced driver assistance system. ... Precision landing using an adaptive fuzzy multi-sensor data fusion architecture. ... on recent advances in integrated GNSSs towards seamless navigation using multi-sensor fusion technology. ... Multi-sensor fusion for body sensor network in
+--------------------------------------------------------------------------------
+Distributed sensors and neural network driven building earthquake resistance mechanism (https://www.aimspress.com/aimspress-data/aimsgeo/2022/4/PDF/geosci-08-04-040.pdf)
+citeturn9search17 [wordlim: 200] Published: 3.9 years ago; (2018) Precision landing using an adaptive fuzzy ... Xiao F (2019) Multi-sensor data fusion based on the belief divergence measure of evidences and ... (2000) The improvements of BP neural network learning algorithm.
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn9view0 [wordlim: 200] Source: open({"ref_id":"https://europepmc.org/articles/PMC5677314","lineno":null}); Total lines: 1
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn9view1 [wordlim: 200] Source: open({"ref_id":"https://www.sciencedirect.com/science/article/pii/S1568494618302163","lineno":null}); Total lines: 1
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn9view2 [wordlim: 200] Source: open({"ref_id":"https://api.crossref.org/works/10.3390%2Fmachines13020130","lineno":null}); Total lines: 1
+--------------------------------------------------------------------------------
+Internal Error ()
+citeturn9view3 [wordlim: 200] Source: open({"ref_id":"https://api.crossref.org/works/10.1109%2FTIM.2022.3197775","lineno":null}); Total lines: 1
+

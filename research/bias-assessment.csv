@@ -1,0 +1,19 @@
+evidence_id,domain,assessment,basis,reviewer,date,human_review
+E-001,data_independence,CONCERN,"C-002: same simulated baseline trajectories in both splits; field data separate; actual leakage not established",Codex,2026-10-09,PENDING
+E-001,transferability,LIMITED,"IV-B: field example; repeated independent flights and intervals not established; C-003",Codex,2026-10-09,PENDING
+E-001,baseline_fairness,PARTIAL,"Table II includes fixed/adaptive Q comparators; optimality of tuning not independently checked",Codex,2026-10-09,PENDING
+E-001,resources,PARTIAL,"IV-A inference timing reported on desktop hardware; onboard replication NOT_RETRIEVED",Codex,2026-10-09,PENDING
+E-002,data_independence,UNCLEAR,"sections3.5–3.6: validation curves; trajectory/session split and overlap require verification",Codex,2026-10-09,PENDING
+E-002,baseline_fairness,CONCERN,"Table1 and section4: different sensor suites; within-system ablation relevant but Table5 unresolved C-009",Codex,2026-10-09,PENDING
+E-002,ground_truth,UNCLEAR,"section4.3: RTK used during GPS-degraded bridge scenario; independence/quality of reference needs audit",Codex,2026-10-09,PENDING
+E-002,reporting_consistency,UNRESOLVED,"C-009: potential Table5/text mismatch; image check failed",Codex,2026-10-09,PENDING
+E-003,external_validity,LIMITED,"simulation prototype; real sensor recordings and onboard timing NOT_RETRIEVED",Codex,2026-10-09,PENDING
+E-003,reproducibility,UNCLEAR,"score described as function of diagnostics; executable mapping and code not retrieved",Codex,2026-10-09,PENDING
+E-003,negative_results,REPORTED,"C-007: worsening under strong LiDAR degradation preserved",Codex,2026-10-09,PENDING
+E-004,applicability,CONTEXT_ONLY,"C-008: cooperative/external positional fusion; temporal tracker proposed as future work",Codex,2026-10-09,PENDING
+E-004,tuning_independence,UNCLEAR,"sectionV: hand-set FIS parameters; independent tuning validation not established",Codex,2026-10-09,PENDING
+E-005,all_domains,NOT_RETRIEVED,"search result only; no method appraisal",Codex,2026-10-09,PENDING
+E-006,all_domains,NOT_RETRIEVED,"search result only; no method appraisal",Codex,2026-10-09,PENDING
+E-007,all_domains,NOT_RETRIEVED,"metadata only; no method appraisal",Codex,2026-10-09,PENDING
+E-008,all_domains,NOT_RETRIEVED,"search result only; no method appraisal",Codex,2026-10-09,PENDING
+

@@ -1,0 +1,10 @@
+{
+  "base_revision": "initial-uncommitted",
+  "files": {
+    "research/BRIEF.md": "95d11ce89ef81f1f99451635a4f8430fd087208d801353d8a021cd7f69bd5958",
+    "research/STATE.md": "0192d41a9fa9725850cf512b8c9b0a115f3c236f71b14fe9b7e146154fcbcf66",
+    "research/protocol.md": "036a416f296582cc9a7f848aa81fe7d1071588d18e2116d192b2869c54a94cc9",
+    "research/sources.csv": "1f4301a0a21cbb64f05088c49d063bd9df84bd3654b0ed7bab9e12ac126d52a8",
+    "research/claims.csv": "540df33f370df85163a808dfc8b787718a0802c729b70b786dbe91f6b99687ea"
+  }
+}

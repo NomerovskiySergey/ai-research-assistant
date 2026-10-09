@@ -1,0 +1,11 @@
+"record_id","evidence_id","study_id","stage","decision","reason","reviewer","date"
+"R-001","E-001","ST-001","title_abstract","RETRIEVE_FULL_TEXT","Historical first-stage decision preserved","Codex","2026-10-09"
+"R-001","E-001","ST-001","full_text","INCLUDE","Learning Q adaptation; UAV field evaluation; main core","Codex","2026-10-09"
+"R-002","E-002","ST-002","full_text","INCLUDE","LSTM sensor weights and R adaptation; UAV evaluation","Codex","2026-10-09"
+"R-003","E-003","ST-003","full_text","INCLUDE_COMPARATOR","Explicit reliability score and R scaling; statistical diagnostic prototype; simulation","Codex","2026-10-09"
+"R-004","E-004","ST-004","full_text","CONTEXT_ONLY","Fuzzy confidence relevant; external/cooperative positioning rather than onboard temporal navigation","Codex","2026-10-09"
+"R-005","E-005","ST-005","discovery","AWAIT_TEXT","ANFIS fault-detection candidate; direct text unavailable; fusion adaptation eligibility unresolved","Codex","2026-10-09"
+"R-006","E-006","ST-006","discovery","AWAIT_TEXT","Hybrid federated candidate; explicit reliability mechanism unresolved","Codex","2026-10-09"
+"R-007","E-007","ST-007","metadata","AWAIT_TEXT","Fuzzy adaptive R candidate; repository manuscript HTTP403","Codex","2026-10-09"
+"R-008","E-008","ST-008","discovery","AWAIT_TEXT","ML uncertainty candidate; platform applicability and erratum unresolved","Codex","2026-10-09"
+

@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+work/
+__pycache__/
+private/
+*.pdf
+*.docx
+*.zip
+!mobile/*.zip
+
