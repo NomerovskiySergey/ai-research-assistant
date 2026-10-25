@@ -9,3 +9,7 @@ private/
 *.zip
 !mobile/*.zip
 
+# Local research archive and generated outputs
+/manuscripts/
+/outputs/
+/research/
