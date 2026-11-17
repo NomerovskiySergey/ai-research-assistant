@@ -19,3 +19,6 @@ Amendment: два discovery-запити виконано до запису ць
 
 Amendment 2026-10-09: statistical reliability prototype included as comparator; external fuzzy positioning retained as context. Extraction follows paper-extraction; reading limited to notes locators. PDF numerical claims withheld where image verification failed. Related reports not counted independently. Native database proposals remain unexecuted; no meta-analysis or PRISMA. Existing E-001/C-001 IDs preserved.
 
+
+
+Amendment 2026-10-09 continuation2: recovered diagnostic and hybrid-fusion texts retained as context where explicit reliability-to-adaptation path not established; no eligibility relaxation. Native DOI lookup/correction-title search separated from topic searching. Related erratum linked to existing study. C-009 verified visually; no raw-data validity inferred. Existing IDs preserved; human_review=PENDING.

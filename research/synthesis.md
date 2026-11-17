@@ -20,3 +20,15 @@
 ## Межі покриття
 Виконано лише запити search-log.csv; нативні Scopus/WoS/IEEE не виконувалися. Результати вебпошуку вибіркові; всі snippets не screened. Full text відкрито для E-001–E-004, але extraction охоплює зазначені розділи, без незалежної реплікації. E-005–E-008 очікують текстів; registry/corrections-перевірка неповна. Немає другого reviewer, meta-analysis чи PRISMA. Див. access-limitations.md, bias-assessment.csv та notes/.
 
+
+
+## Continuation 2: diagnosis, fusion and reporting
+Sun et al. use ANFIS decisions to update the online learning database (C-011), and discuss accumulation of erroneous labels (C-012). Their author-defined false-alarm denominator is total detected faults (C-014). This diagnostic study is contextual: detection performance is not treated as evidence of downstream adaptive-navigation improvement. [Publisher JATS](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5677314/fullTextXML).
+
+Negru et al. use GRU INS correction/master fusion with HIL validation (C-013). This is retained as hybrid-navigation context; a calibrated sensor-level reliability-to-adaptation mechanism was not established in the read sections. [Publisher JATS](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10857391/fullTextXML).
+
+C-009 is now SUPPORTED: visual inspection confirms the LSAF table/text discrepancy. This supports caution about reporting; it does not establish the correct underlying effect. [Local verification](verification/E-002-p23.png).
+
+Proposed focus, still a hypothesis rather than established novelty: jointly evaluate trust calibration, the trust-to-fusion mapping and sensor contribution to observability (C-010). Add protection against erroneous online labels (motivation C-012), and specify false-alarm denominators explicitly (motivation C-014). A method should be compared using the same sensor suite and separate routes/environments; this remains a research proposal, not an executed experiment.
+
+Verified bibliographic subset is in references.bib/index. Erratum metadata E-009 is matched, but its corrected content remains unavailable (C-015 PARTIAL). No quantitative UWB/GNSS conclusion is adopted.

@@ -18,3 +18,12 @@
 Немає незалежного другого reviewer, повного citation chasing, повного deduplication видачі, перевірки всіх corrections чи реплікації коду. Пов’язані reports (журнальний E-001, конференційний попередник E-002, презентація E-004) не додані як незалежні studies.
 CONTЕNT_OPENED у реєстрі означає відкритий текст із явно вказаним access_scope, а не підтвердження всіх методів/чисел. Paywall або глобальну недоступність баз не встановлено. Матеріали не завантажувалися в сторонні сервіси, платні API не застосовувалися.
 
+
+
+## Continuation 2 — restored access and remaining limits
+Sandbox download failed DNS. User-approved external-network commands obtained local E-002 PDF, publisher JATS E-005/E-006 via Europe PMC, Crossref metadata E-001/E-002/E-008, and erratum search metadata. All API attempts and SHA256 for successful responses are in access-attempts.csv. No confidential uploads, installs or paid API calls.
+E-002 p23 rendered with bundled pypdfium2 and visually inspected; this closes the former image-check limit for that page only. Other PDF pages are not declared visually verified.
+Crossref E-005/E-006 retries returned429; records remain valid candidates, not INVALID. Publisher JATS and EuropePMC metadata matched instead. Kingston old host failed DNS; current manuscript URL returned403 again. Publisher MDPI XML attempt returned429. PMC HTML still returned browser check; EuropePMC fullTextXML provided an open alternative.
+Native EuropePMC DOI lookup and Crossref correction-title query were executed and logged; native Scopus/WoS/IEEE topic searches still were not. This is not an exhaustive systematic review.
+New broad-search leads, including 2026 learned-trust/RL papers, are not yet screened and not used for substantive claims. E-008 primary text and E-009 corrected content remain NOT_RETRIEVED; corrections for other reports remain UNVERIFIED.
+Crossref empty relation/update-to fields do not prove absence of corrections: E-008's erratum was found by title search.

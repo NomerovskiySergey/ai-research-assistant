@@ -14,3 +14,11 @@
 
 DOI, взяті з PDF або пошукових підказок, мають окремі межі перевірки в metadata-checks.csv. CONTENT_OPENED не означає, що всі metadata, числа та corrections підтверджено.
 
+
+
+## Continuation 2 — supersedes earlier pending rows
+E-005 full XML retrieved: diagnostic context, C-011/C-012/C-014; explicit closed-loop fusion adaptation not established.
+E-006 full XML retrieved: GRU/EKF HIL context, C-013; no independently established calibrated sensor-trust mapping.
+E-008 metadata matched through Crossref; full text still pending. E-009 erratum metadata is a related report of ST-008, not a new study.
+E-002 p23 visually checked; C-009 confirmed as table/text inconsistency, not proof of which value is correct.
+Current selected register: 9 reports, 8 study clusters; 3 core reports, 3 context reports, 2 primary reports awaiting content, 1 related correction report. Provisional study clustering; not PRISMA totals.
